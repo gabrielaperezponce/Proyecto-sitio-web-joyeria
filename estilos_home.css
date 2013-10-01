@@ -1,0 +1,485 @@
+html{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+
+	padding:0;
+	margin:0;
+}
+
+#contenedor{
+
+position:absolute;
+width: 1200px;
+height: 100%;
+top: 0px;
+margin-left:30px;
+
+}
+
+#fondo_header{
+
+width:1200px;
+height: 198px;
+background-image: url("../imagenes/wavegrid.png");
+z-index: 3;
+top:0px;
+position: absolute;
+
+}
+
+#logo{
+
+width:194px;
+height: 193px;
+position: relative;
+float:left;
+z-index:4;
+margin-left: 480px;
+
+}
+
+#buscador_header{
+
+width: 200px;
+height: 35px;
+margin-top: 35px;
+margin-left: 300px;
+position: relative;
+float:right;
+
+}
+
+#links_principales{
+
+width: 270px;
+height: 20px;
+margin-left: 975px;
+margin-top: 97px;
+font-family: 'Pontano Sans', sans-serif;
+font-size: 13px;
+
+}
+
+
+#links_header{
+
+list-style:none;
+
+}
+
+#links_1{
+
+padding:4px;
+text-decoration: none;
+color: #000;
+float:left; 
+
+}
+
+#links_1 a{
+
+text-decoration: none;
+color: #000;
+float:left; 
+
+}
+
+#compras{
+
+width: 110px;
+height: 20px;
+margin-top: 10px;
+list-style:none;
+position: relative;
+float:left;
+margin-left: 60px;
+
+}
+
+
+#vista_compras{
+
+padding:4px;
+text-decoration: none;
+color: #000;
+float:left; 
+margin-left: 0px;
+
+}
+
+
+#vista_compras a{
+
+text-decoration: none;
+color: #000;
+float:left; 
+
+}
+
+.menu_principal{
+
+width: 700px;
+height: 20px;
+margin-left: 360px;
+margin-top: 200px;
+z-index: 6;
+float:left;
+font-family: 'Open Sans Condensed', sans-serif;
+font-weight: 300;
+font-size: 16px;
+position:relative;
+}
+
+.secciones_menu{
+
+list-style:none;
+
+}
+
+.seccion{
+
+padding:7px;
+text-decoration: none;
+color: #000;
+float:left; 
+margin-left: 4px;
+
+}
+
+
+.seccion a{
+
+text-decoration: none;
+color: #000;
+float:left;
+
+}
+
+.seccion a:hover {
+
+color:#FFF;
+background-color:#D91C5C;
+}
+
+
+.destacados{
+
+width: 720px;
+height: 470px;
+float:left;
+z-index:8;
+margin-left:245px;
+margin-top: 45px;
+}
+
+.img-thumbnail{
+
+width: 295px;
+height: 215px;
+background-color: #D1D3D4;
+margin-left:25px;
+margin-bottom: 25px;
+float:left;
+position:relative;
+
+}
+
+.img-thumbnail:hover{
+
+opacity: 0.70;
+
+}
+
+#foto_1{
+
+background-image: url("../imagenes/joya7.jpg");
+
+}
+
+#foto_2{
+
+background-image: url("../imagenes/joya8.jpg");
+
+}
+
+#foto_3{
+
+background-image: url("../imagenes/joya9.jpg");
+
+}
+
+#foto_4{
+
+background-image: url("../imagenes/joya_11.jpg");
+
+}
+
+.titulo_foto{
+
+width: 295px;
+height:40px;
+position:relative;
+margin-top: 176px;
+background-color: #231F20;
+opacity: 0.79;
+
+}
+
+.texto_foto{
+
+font-size: 13px;
+float:left;
+color:#FFF;
+z-index: 7;
+margin-left: 15px;
+margin-top: 7px;
+font-family: 'Open Sans Condensed', sans-serif;
+font-weight: 400;
+font-size: 13px;
+position: relative;
+
+}
+
+.titulos_seccion{
+
+position:relative;
+float:left;
+z-index:10;
+margin-top:25px;
+margin-left: 215px;
+font-family: 'Open Sans Condensed', sans-serif;
+font-weight: 300;
+font-size: 16px;
+
+}
+.linea_titulos{
+
+width: 720px;
+height: 4px;
+background-color:#8A4A63;
+position:relative;
+float:left;
+z-index:10;
+margin-top:10px;
+margin-left: 215px;
+
+}
+
+
+.galeria_fotografica{
+
+width: 720px;
+height: 100px;
+position: relative;
+margin-left: 265px;
+float: left;
+
+}
+
+.galeria_circular{
+
+width: 97px; 
+height: 97px; 
+border-radius: 95px; 
+float: left;
+z-index: 8;
+position: relative;
+margin-left: 45px;
+margin-top: 25px;
+
+}
+
+.galeria_circular:hover{
+
+opacity: 0.80;
+
+}
+
+#imagen_circ1{
+
+background-image: url("../imagenes/foto_categoria1-12-12.png");
+
+}
+
+#imagen_circ1:hover .texto_hover{
+
+display: block;
+
+}
+
+#imagen_circ2{
+
+background-image: url("../imagenes/foto_categoria2-12.png");
+
+}
+
+#imagen_circ2:hover .texto_hover{
+
+display: block;
+
+}
+
+#imagen_circ3{
+
+background-image: url("../imagenes/foto_categoria3-12.png");
+
+}
+
+#imagen_circ3:hover .texto_hover{
+
+display: block;
+
+}
+
+
+#imagen_circ4{
+
+background-image: url("../imagenes/foto_categoria4-12.png");
+
+}
+
+#imagen_circ4:hover .texto_hover{
+
+display: block;
+
+}
+
+.texto_hover{
+
+position:absolute;
+float:left;
+z-index:19;
+font-family:'Open Sans Condensed', sans-serif;
+font-weight: 300;
+font-size: 20px;
+display: none;
+left:30px;
+top:40px;
+color: #fff;
+
+}
+
+
+/*Estilos carrousel*/
+
+#wrapper {
+	background-color: #fff;
+	width: 100%;
+	height: 450px;
+	overflow: hidden;
+	position: relative;
+	padding-top:45px;
+
+}
+#carousel img {
+	display: block;
+	float: left;
+}
+#prev, #next {
+	background-color: rgba(175, 65, 100, 0.7);
+	display: block;
+	height: 450px;
+	width: 50%;
+	top: 45px;
+	position: absolute;
+}
+#prev:hover, #next:hover {
+	background-color: #fff;
+	background-color: rgba(35, 31, 32, 0.8);
+}
+#prev {
+	left: -495px;
+}
+#next {
+	right: -495px;
+}
+#pager {
+	margin-left: -470px;
+	position: absolute;
+	left: 50%;
+	bottom: 10px;
+}
+#pager a {
+	border: 2px solid #fff;
+	border-radius: 10px;
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	margin: 0 5px 0 0;
+}
+#pager a:hover {
+	background-color: rgba(255, 255, 255, 0.5);
+}
+#pager a span {
+	display: none;
+}
+#pager a.selected {
+	background-color: #fff;
+}
+
+
+/*fin carrousel*/
+
+#footer{
+
+width:1200px;
+height: 55px;
+background-color: #AF4164;
+position:relative;
+float:left;
+margin-top: 50px;
+
+}
+
+#datos_footer{
+
+width: 600px;
+height: 45px;
+margin-left: 320px;
+z-index: 6;
+float:left;
+font-family: 'Open Sans Condensed', sans-serif;
+font-weight: 300;
+font-size: 13px;
+position:relative;
+list-style: none;
+bottom:30px;
+padding-top: 25px;
+
+}
+
+#links_footer{
+
+padding:7px;
+color: #FFF;
+float:left; 
+margin-left: 10px;
+text-decoration: none;
+color: #FFF;
+position: relative;
+
+}
+
+#redes_sociales{
+
+width: 100px;
+height: 55px;
+z-index: 9;
+float:left;
+position: relative;
+list-style: none;
+margin-top: 10px;
+bottom: 20px;
+
+}
+
+#iconos_redes{
+
+float:left;
+position:relative;
+z-index: 9;
+padding-top:25px;
+}
