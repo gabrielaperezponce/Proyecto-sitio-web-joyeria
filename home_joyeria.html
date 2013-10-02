@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="css/estilos_home.css">
+<link href='http://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
+
+<title>Javiana Joyería</title>
+
+<script src="jquery-2.0.3.js"></script>
+<script src="jquery.carouFredSel-6.2.1.js"></script>
+
+<script>
+
+$(function() {
+	$('#carousel').carouFredSel({
+		width: '100%',
+		items: {
+			visible: 3,
+			start: -1
+		},
+		scroll: {
+			items: 1,
+			duration: 1000,
+			timeoutDuration: 3000
+		},
+		prev: '#prev',
+		next: '#next',
+		pagination: {
+			container: '#pager',
+			deviation: 1
+		}
+	});
+});
+
+</script>
+
+</head>
+
+<body>
+
+	<div id="contenedor">
+
+		<div id="fondo_header">
+
+				<div id="logo">
+
+					<a href="home_joyeria.html"><img src="imagenes/logo_joyeria1-06.png"></img></a>
+
+				</div>
+
+
+				<div id="buscador_header">
+	      
+	      			<input type="search" style="height:20px; float:left" placeholder="Buscar"></input>
+	      			
+
+	      			<a href="buscador.html"><img src="imagenes/icono_buscador-07.png" style="width:20px;height:20px;position:relative;float:left" ></img></a>
+
+
+	   			</div>  
+
+
+	   			<div id="links_principales">
+		   			
+		   			<ul id="links_header">
+
+						<li id="links_1"><a href="#">Regístrate</a></li>
+						<li id="links_1">|</li>
+						<li id="links_1"><a href="#">Mi cuenta</a></li>
+
+					</ul>
+
+					<ul id="compras">
+
+						<li id="vista_compras"><a href="#">Mi carro: $0</a></li>
+							
+					</ul>
+
+				</div>
+
+		</div>
+
+
+
+		<div class="menu_principal">
+
+				<ul class="secciones_menu">
+
+						<li class="seccion"><a href="#">INICIO</a></li>
+						<li class="seccion"><a href="#">PRODUCTOS</a></li>
+						<li class="seccion"><a href="#">PREGUNTAS FRECUENTES</a></li>
+						<li class="seccion"><a href="#">CONTACTO</a></li>
+
+				</ul>
+
+		</div>
+
+
+			 <div id="wrapper">
+				<div id="carousel">
+					<img src="imagenes/joyas1-13.png" alt="joya1" width="990" height="450" />
+					<img src="imagenes/joyas2-13.jpg" alt="joya2" width="990" height="450" />
+					<img src="imagenes/joyas3-13.jpg" alt="joya3" width="990" height="450" />
+					<img src="imagenes/joyas4-13.jpg" alt="joya4" width="990" height="450" />
+					<img src="imagenes/joyas5-13.jpg" alt="joya5" width="990" height="450" />
+					<img src="imagenes/joyas6-13.jpg" alt="joya6" width="990" height="450" />
+				</div>
+				
+				<a href="#" id="prev" title="Show previous"> </a>
+				<a href="#" id="next" title="Show next"> </a>
+				<div id="pager"></div>
+
+			</div>
+
+
+
+				<div class="titulos_seccion">
+					NOVEDADES
+				</div>
+
+				<div class="linea_titulos">
+				</div>
+
+
+				<div class="destacados">
+
+					<div id="foto_1" class="img-thumbnail">
+
+						<div class="titulo_foto"><a href="#"><span class="texto_foto"> Lo más vendido  </span></a></div> 
+						
+
+					</div>
+
+					<div  id="foto_2" class="img-thumbnail">
+
+						<div class="titulo_foto"><a href="#"><span class="texto_foto"> Nuevas Joyas  </span></a></div>
+
+					</div>
+
+					<div  id="foto_3" class="img-thumbnail">
+						
+						<div class="titulo_foto"><a href="#"><span class="texto_foto"> Nuevos accesorios </span></a></div>
+
+					</div>
+
+					<div  id="foto_4" class="img-thumbnail">
+
+						<div class="titulo_foto"><a href="#"><span class="texto_foto"> Belleza </span></a></div>
+
+					</div>
+					
+				</div>
+
+
+				<div class="titulos_seccion">
+					CATEGORÍAS DESTACADAS
+				</div>
+
+				<div class="linea_titulos">
+				</div>
+
+
+		<div class="galeria_fotografica">
+
+		<a href="#"><div id="imagen_circ1" class="galeria_circular"><div class="texto_hover">Joyas</div></div></a>
+		<a href="#"><div id="imagen_circ2" class="galeria_circular"><div class="texto_hover">Moda</div></div></a>
+		<a href="#"><div id="imagen_circ3" class="galeria_circular"><div class="texto_hover">Belleza</div></div></a>
+		<a href="#"><div id="imagen_circ4" class="galeria_circular"><div class="texto_hover">Otros</div></div></a>
+
+		</div>
+
+		<div id="footer">
+
+			<ul id="datos_footer">
+
+
+						<li id="links_footer"><a href="#">INICIO</a></li>
+						<li id="links_footer"><a href="#">PRODUCTOS</a></li>
+						<li id="links_footer"><a href="#">PREGUNTAS FRECUENTES</a></li>
+						<li id="links_footer"><a href="#">CONTACTO</a></li>
+
+
+			</ul>
+
+			<ul id="redes_sociales">
+
+						<li id="iconos_redes"><a href="#"><img src="imagenes/icono_mail-11.png"></img></a></li>
+						<li id="iconos_redes"><a href="#"><img src="imagenes/icono_facebook-11.png"></img></a></li>
+						<li id="iconos_redes"><a href="#"><img src="imagenes/icono_twitter-11.png"></img></a></li>
+			</ul>
+
+		</div>
+
+	</div>	
+
+
+
+
+           		
+
+</body>
+</html>
