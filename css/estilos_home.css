@@ -146,7 +146,6 @@ text-decoration: none;
 color: #000;
 float:left; 
 margin-left: 4px;
-
 }
 
 
@@ -184,7 +183,7 @@ margin-left:25px;
 margin-bottom: 25px;
 float:left;
 position:relative;
-
+box-shadow: 0 0 7px #000;
 }
 
 .img-thumbnail:hover{
@@ -195,25 +194,25 @@ opacity: 0.70;
 
 #foto_1{
 
-background-color: #A5AEB5;
+background-image: url("../imagenes/joya7.jpg");
 
 }
 
 #foto_2{
 
-background-color: #A5AEB5;
+background-image: url("../imagenes/joya8.jpg");
 
 }
 
 #foto_3{
 
-background-color: #A5AEB5;
+background-image: url("../imagenes/joya9.jpg");
 
 }
 
 #foto_4{
 
-background-color: #A5AEB5;
+background-image: url("../imagenes/joya_11.jpg");
 
 }
 
@@ -248,7 +247,8 @@ position: relative;
 position:relative;
 float:left;
 z-index:10;
-margin-top:25px;
+width: 500px;
+margin-top:120px;
 margin-left: 215px;
 font-family: 'Open Sans Condensed', sans-serif;
 font-weight: 300;
@@ -300,7 +300,7 @@ opacity: 0.80;
 
 #imagen_circ1{
 
-background-color: #A5AEB5;
+background-image: url("../imagenes/foto_categoria1-12-12.png");
 
 }
 
@@ -312,7 +312,7 @@ display: block;
 
 #imagen_circ2{
 
-background-color: #A5AEB5;
+background-image: url("../imagenes/foto_categoria2-12.png");
 
 }
 
@@ -324,7 +324,7 @@ display: block;
 
 #imagen_circ3{
 
-background-color: #A5AEB5;
+background-image: url("../imagenes/foto_categoria3-12.png");
 
 }
 
@@ -337,7 +337,7 @@ display: block;
 
 #imagen_circ4{
 
-background-color: #A5AEB5;
+background-image: url("../imagenes/foto_categoria4-12.png");
 
 }
 
@@ -365,69 +365,93 @@ color: #fff;
 
 /*Estilos carrousel*/
 
-#wrapper {
-	background-color: #fff;
-	width: 100%;
-	height: 450px;
-	overflow: hidden;
-	position: relative;
-	padding-top:45px;
+			#wrapper {
+				width: 854px;
+				min-width: 854px;
+				height: 480px;
+				margin: -250px 0 0 0;
+				position: relative;
+				left: 13%;
+				float: left;
+				margin-top: 50px;
+			}
+			#carousel div {
+				height: 480px;
+				float: left;
+			}
+			#carousel img {
+				min-width:854px;
+				min-height: 480px;
+			}
+			#title {
+				text-align: right;
+				width: 100%;
+				margin-top: -10px;
+				position: absolute;
+				top: 80%;
+				margin-left: 45px;
+			}
+			#title h3 {
+/*				text-shadow: 
+					0 3px 3px rgba( 0, 0, 0, 0.3 ),
+					0 -3px 3px rgba( 0, 0, 0, 0.3 ),
+					3px 0 3px rgba( 0, 0, 0, 0.3 ),
+					-3px 0 3px rgba( 0, 0, 0, 0.3 );*/
 
-}
-#carousel img {
-	display: block;
-	float: left;
-}
-#prev, #next {
-	background-color: rgba(175, 65, 100, 0.7);
-	display: block;
-	height: 450px;
-	width: 50%;
-	top: 45px;
-	position: absolute;
-}
-#prev:hover, #next:hover {
-	background-color: #fff;
-	background-color: rgba(35, 31, 32, 0.8);
-}
-#prev {
-	left: -495px;
-}
-#next {
-	right: -495px;
-}
-#pager {
-	margin-left: -470px;
-	position: absolute;
-	left: 50%;
-	bottom: 10px;
-}
-#pager a {
-	border: 2px solid #fff;
-	border-radius: 10px;
-	display: inline-block;
-	width: 10px;
-	height: 10px;
-	margin: 0 5px 0 0;
-}
-#pager a:hover {
-	background-color: rgba(255, 255, 255, 0.5);
-}
-#pager a span {
-	display: none;
-}
-#pager a.selected {
-	background-color: #fff;
-}
+				font-size: 30px;
+				font-weight: bold;
+				line-height: 50px;
+				color: #fff;
+				margin: 0;
+				font-family: 'Pontano sans',sans-serif;
+			}
+
+			#title a {
+				color: #fff;
+			}
+			#title a:hover {
+				background: rgba( 0, 0, 0, 0.5 );
+				padding: 2px 5px;
+			}
+			#pager {
+				border-radius: 20px;
+				background: #fff;
+				text-align: center;
+				width: 120px;
+				height: 50px;
+				padding-top: 2px;
+				margin: 235px 0 0 -60px;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+			}
+			#pager a.selected span {
+				background: #666;
+			}
+			#pager a {
+				display: inline-block;
+				padding: 5px;
+			}
+			#pager span {
+				border-radius: 10px;
+				background: #ccc;
+				text-indent: -100px;
+				line-height: 0;
+				display: inline-block;
+				width: 10px;
+				height: 10px;
+				overflow: hidden;
+			}
 
 
 /*fin carrousel*/
+
 
 #footer{
 
 width:1200px;
 height: 55px;
-background-color: #A5AEB5;
+background-color: #AF4164;
 position:relative;
 float:left;
 margin-top: 50px;
@@ -457,10 +481,14 @@ padding:7px;
 color: #FFF;
 float:left; 
 margin-left: 10px;
-text-decoration: none;
 color: #FFF;
 position: relative;
 
+}
+
+#links_footer a{
+text-decoration: none;
+color:#FFF;
 }
 
 #redes_sociales{
