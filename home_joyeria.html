@@ -1,218 +1,196 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-<meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="css/estilos_home.css">
-<link href='http://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/estilos_home.css">
+	<link href='http://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
+	
+	<link rel="shortcut icon" href="imagenes/favicon.ico" type="image/x-icon" />
+	<title>Javiana Joyería</title>
 
-<title>Javiana Joyería</title>
+		<script src="jquery-2.0.3.js"></script>
+		<script src="jquery.carouFredSel-6.2.1.js"></script>
 
-<script src="jquery-2.0.3.js"></script>
-<script src="jquery.carouFredSel-6.2.1.js"></script>
+		<script>
 
-<script type="text/javascript">
-			$(function() {
-				$('#carousel').carouFredSel({
-					responsive: true,
-					items: {
-						visible: 1,
-						width: 854,
-						height: 480
-					},
-					scroll: {
-						duration: 250,
-						timeoutDuration: 2500,
-						fx: 'uncover-fade'
-					},
-					pagination: '#pager'
-				}),
-
-				$('#title').carouFredSel({
-					responsive: true,
-					items: {
-						visible: 1,
-						width: 854,
-						height: 50
-					},
-					scroll: {
-						duration: 250,
-						timeoutDuration: 2500,
-					}
-				});
+		$(function() {
+			$('#carousel').carouFredSel({
+				width: '100%',
+				items: {
+					visible: 3,
+					start: -1
+				},
+				scroll: {
+					items: 1,
+					duration: 1700,
+					timeoutDuration: 3000
+				},
+				prev: '#prev',
+				next: '#next',
+				pagination: {
+					container: '#pager',
+					deviation: 1
+				}
 			});
+		});
+
 		</script>
+
 </head>
 
 <body>
 
-	<div id="contenedor">
+	<div id="contenedor_home">
 
 		<div id="fondo_header">
 
 				<div id="logo">
-
-					<a href="home_joyeria.html"><img src="imagenes/logo_joyeria1-06.png"></img></a>
-
+					<a href="home_joyeria.html"><img src="imagenes/logo2joyeria-17.png"></img></a>
 				</div>
 
-				<form action="search.php" method="post">
+
 				<div id="buscador_header">
 	      			
 	      			<input type="search" style="height:20px; float:left" placeholder="Buscar"></input>
 	      			
-
 	      			<a href="buscador.html"><img src="imagenes/icono_buscador-07.png" style="width:20px;height:20px;position:relative;float:left" ></img></a>
-	      		</form>
 
 	   			</div>  
 
-
-	   			<nav id="links_principales">
+	   			<div id="links_principales">
 		   			
 		   			<ul id="links_header">
-
-						<li id="links_1"><a href="seccion_registro.html">Regístrate</a></li>
+						<li id="links_1"><a href="seccion_registrate.html">Regístrate</a></li>
 						<li id="links_1">|</li>
 						<li id="links_1"><img src="imagenes/icono_mariposa-08.png"></img></li>
-						<li id="links_1"><a href="#">Mi cuenta</a></li>
-
+						<li id="links_1"><a href="seccion_micuenta.html">Mi cuenta</a></li>
 					</ul>
 
 					<ul id="compras">
-
-						<li id="vista_compras"><img src="imagenes/icono_carrito-09.png"></img></li>
+						<li id="links_1"><img src="imagenes/icono_carrito-09.png"></img></li>
 						<li id="vista_compras"><a href="#">Mi carro: $0</a></li>
-							
+
+						<div class="ver_carrito_compras">
+							<span class="carrito_icon"><img src="imagenes/iconocarritocompras-21.png"></img></span>
+							<span class="titulo_carro"> Mi carro de compras</span>
+							<div class="linea_titulo"></div>
+							<img src="imagenes/bolsaicon-22.png" class="imagen_compra"></img>
+							<span class="texto_complementario2">No tienes productos en tu carro</span>
+							<div class="linea_gruesa"></div>
+							<div class="cuadro_subtotal"><span class="valor_compra">Subtotal: $0</span></div>
+												
+							<button type="submit" class="button_compra" value="" name="datos"><span class="texto_boton" >Comprar</span></button>
+						</div>
 					</ul>
 
-				</nav>
+				</div>
+		</div>
 
+		<div class="menu_principal">
+
+					<ul class="secciones_menu">
+							<li class="seccion"><a href="home_joyeria.html">INICIO</a></li>
+							<li class="seccion"><a href="seccion_productos.html">PRODUCTOS</a></li>
+							<li class="seccion"><a href="seccion_faqs.html">PREGUNTAS FRECUENTES</a></li>
+							<li class="seccion"><a href="seccion_contacto.html">CONTACTO</a></li>
+					</ul>
 		</div>
 
 
-
-		<nav class="menu_principal">
-				
-				<ul class="secciones_menu">
-
-						<li class="seccion"><a href="home_joyeria.html">INICIO</a></li>
-						<li class="seccion"><a href="#">PRODUCTOS</a></li>
-						<li class="seccion"><a href="#">PREGUNTAS FRECUENTES</a></li>
-						<li class="seccion"><a href="#">CONTACTO</a></li>
-
-				</ul>
-			   
-		</nav>
-
-
-			 <div id="wrapper">
+		<div id="wrapper">
 				<div id="carousel">
-					<img src="imagenes/joyas1.png" alt="joya1" width="854px" height="480px" />
-					<img src="imagenes/joyas2.jpg" alt="joya2" width="854px" height="480px" />
-					<img src="imagenes/joyas3.jpg" alt="joya3" width="854px" height="480px" />
-					<img src="imagenes/joyas4.jpg" alt="joya4" width="854px" height="480px" />
-					<img src="imagenes/joyas5.jpg" alt="joya5" width="854px" height="480px" />
-					<img src="imagenes/joyas6.jpg" alt="joya6" width="854px" height="480px" />
+					
+					<img src="imagenes/fondosliderbienvenida-13.png" alt="joya2" width="990" height="450" />
+					<img src="imagenes/joyas3.jpg" alt="joya3" width="990" height="450" />
+					<img src="imagenes/joyas4.jpg" alt="joya4" width="990" height="450" />
+					<img src="imagenes/joyas5.jpg" alt="joya5" width="990" height="450" />
+					<img src="imagenes/joya1carousel.png" alt="joya1" width="990" height="450"/>
 				</div>
 				
-				<div id="title">
-					<h3>Lorem ipsum dolor sit amet</h3>
-					<h3> Nullam mattis eros est, at suscipit mi posuere in.</h3>
-					<h3>Vestibulum vehicula lacinia felis at blandit</h3>
-					<h3>Vivamus consequat ullamcorper nibh</h3>
-					<h3>Pellentesque habitant morbi tristique senectus et </h3>
-					<h3>Maecenas orci libero, adipiscing et diam ac</h3>
-				</div>
+				<a href="#" id="prev" title="Atrás"> </a>
+				<a href="#" id="next" title="Adelante"> </a>
 				<div id="pager"></div>
+		</div>
 
-			</div>
+		<div class="titulos_seccion">
+				NOVEDADES DEL MES
+		</div>
+
+		<div class="linea_titulos">
+		</div>
 
 
+		<div class="destacados">
 
-				<div class="titulos_seccion">
-					NOVEDADES
+				<div class="fotos_seccion1">
+
+						<div id="foto_seccion1"class="img-thumbnail2">
+							<a href="#"><div class="titulo_foto2"><span class="texto_foto"> Consejos de belleza  </span></div> </a>
+						</div>
+
 				</div>
 
-				<div class="linea_titulos">
+				<div class="fotos_seccion2">
+							
+						<div id="foto_1" class="img-thumbnail">
+							<div class="titulo_foto"><a href="#"><span class="texto_foto"> Lo más vendido  </span></a></div> 
+						</div>
+
+
+						<div  id="foto_2" class="img-thumbnail">
+							<div class="titulo_foto"><a href="#"><span class="texto_foto"> Nuevas Joyas  </span></a></div>
+						</div>
+
+
+						<div  id="foto_3" class="img-thumbnail">
+							<div class="titulo_foto"><a href="#"><span class="texto_foto"> Nuevos accesorios </span></a></div>
+						</div>
+
+
+						<div  id="foto_4" class="img-thumbnail">
+							<div class="titulo_foto"><a href="#"><span class="texto_foto"> Manicure </span></a></div>
+						</div>
+
 				</div>
+		</div>
 
+		<div class="titulos_seccion">
+				CATEGORÍAS DESTACADAS
+		</div>
 
-				<div class="destacados">
-
-					<div id="foto_1" class="img-thumbnail">
-
-						<div class="titulo_foto"><a href="#"><span class="texto_foto"> Lo más vendido  </span></a></div> 
-						
-
-					</div>
-
-					<div  id="foto_2" class="img-thumbnail">
-
-						<div class="titulo_foto"><a href="#"><span class="texto_foto"> Nuevas Joyas  </span></a></div>
-
-					</div>
-
-					<div  id="foto_3" class="img-thumbnail">
-						
-						<div class="titulo_foto"><a href="#"><span class="texto_foto"> Nuevos accesorios </span></a></div>
-
-					</div>
-
-					<div  id="foto_4" class="img-thumbnail">
-
-						<div class="titulo_foto"><a href="#"><span class="texto_foto"> Belleza </span></a></div>
-
-					</div>
-					
-				</div>
-
-
-				<div class="titulos_seccion">
-					CATEGORÍAS DESTACADAS
-				</div>
-
-				<div class="linea_titulos">
-				</div>
-
+		<div class="linea_titulos">
+		</div>
 
 		<div class="galeria_fotografica">
-
-		<a href="#"><div id="imagen_circ1" class="galeria_circular"><div class="texto_hover">Joyas</div></div></a>
-		<a href="#"><div id="imagen_circ2" class="galeria_circular"><div class="texto_hover">Moda</div></div></a>
-		<a href="#"><div id="imagen_circ3" class="galeria_circular"><div class="texto_hover">Belleza</div></div></a>
-		<a href="#"><div id="imagen_circ4" class="galeria_circular"><div class="texto_hover">Otros</div></div></a>
-
-		</div>
-
+			<a href="seccion_productos.html"><div id="imagen_circ1" class="galeria_circular"><div class="texto_hover">Joyas</div></div></a>
+			<a href="seccion_productos.html"><div id="imagen_circ2" class="galeria_circular"><div class="texto_hover">Moda</div></div></a>
+			<a href="seccion_productos.html"><div id="imagen_circ3" class="galeria_circular"><div class="texto_hover">Belleza</div></div></a>
+			<a href="seccion_productos.html"><div id="imagen_circ4" class="galeria_circular"><div class="texto_hover">Otros</div></div></a>
+		</div>	
+	
 		<div id="footer">
 
-			<ul id="datos_footer">
+				<ul id="datos_footer">
+					<li id="links_footer"><img src="imagenes/icono_mariposa_footer-11.png"></img></li>
+					<li id="links_footer"><a href="home_joyeria.html">INICIO</a></li>
+					<li id="links_footer"><a href="seccion_productos.html">PRODUCTOS</a></li>
+					<li id="links_footer"><a href="seccion_faqs.html">PREGUNTAS FRECUENTES</a></li>
+					<li id="links_footer"><a href="seccion_contacto.html">CONTACTO</a></li>
+					<li id="links_footer"><img src="imagenes/icono_mariposa_footer-11.png"></img></li>
+				</ul>
 
-						<li id="links_footer"><img src="imagenes/icono_mariposa_footer-11.png"></img></li>
-						<li id="links_footer"><a href="home_joyeria.html">INICIO</a></li>
-						<li id="links_footer"><a href="#">PRODUCTOS</a></li>
-						<li id="links_footer"><a href="#">PREGUNTAS FRECUENTES</a></li>
-						<li id="links_footer"><a href="#">CONTACTO</a></li>
-						<li id="links_footer"><img src="imagenes/icono_mariposa_footer-11.png"></img></li>
-
-			</ul>
-
-			<ul id="redes_sociales">
-
-						<li id="iconos_redes"><a href="mailto:admin@javiana.cl"><img src="imagenes/icono_mail-11.png"></img></a></li>
-						<li id="iconos_redes"><a href="www.facebook.com"><img src="imagenes/icono_facebook-11.png"></img></a></li>
-						<li id="iconos_redes"><a href="www.twitter.com"><img src="imagenes/icono_twitter-11.png"></img></a></li>
-			</ul>
-
+				<ul id="redes_sociales">
+					<li id="iconos_redes"><a href="mailto:admin@javiana.cl"><img src="imagenes/icono_mail-11.png"></img></a></li>
+					<li id="iconos_redes"><a href="www.facebook.com"><img src="imagenes/icono_facebook-11.png"></img></a></li>
+					<li id="iconos_redes"><a href="www.twitter.com"><img src="imagenes/icono_twitter-11.png"></img></a></li>
+				</ul>
 		</div>
 
-	</div>	
-
-
-
-
-           		
+	</div>
 
 </body>
+
 </html>
+
+

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/estilos_home.css">
+	<link href='http://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
+
+	<link rel="shortcut icon" href="imagenes/favicon.ico" type="image/x-icon" />
+	<title>Javiana Joyería</title>
+
+</head>
+
+<body>
+
+
+	<div id="contenedor">
+
+		<div id="fondo_header">
+
+				<div id="logo">
+					<a href="home_joyeria.html"><img src="imagenes/logo2joyeria-17.png"></img></a>
+				</div>
+
+
+				<div id="buscador_header">
+	      			<input type="search" style="height:20px; float:left" placeholder="Buscar"></input>
+	      			<a href="buscador.html"><img src="imagenes/icono_buscador-07.png" style="width:20px;height:20px;position:relative;float:left" ></img></a>
+	   			</div>  
+
+
+	   			<div id="links_principales">
+		   			
+		   			<ul id="links_header">
+						<li id="links_1"><a href="seccion_registrate.html">Regístrate</a></li>
+						<li id="links_1">|</li>
+						<li id="links_1"><img src="imagenes/icono_mariposa-08.png"></img></li>
+						<li id="links_1"><a href="seccion_micuenta.html">Mi cuenta</a></li>
+					</ul>
+
+					<ul id="compras">
+						<li id="links_1"><img src="imagenes/icono_carrito-09.png"></img></li>
+						<li id="vista_compras"><a href="#">Mi carro: $0</a></li>
+						
+						<div class="ver_carrito_compras">
+							<span class="carrito_icon"><img src="imagenes/iconocarritocompras-21.png"></img></span>
+							<span class="titulo_carro"> Mi carro de compras</span>
+							<div class="linea_titulo"></div>
+							<img src="imagenes/miniatura_compra-22.png" class="imagen_compra"></img>
+							<span class="titulo_principal1">Colgantes pajarito de plata y aplicaciones</span>
+							<span class="precio_compra">$4.590</span>
+							<span class="texto_complementario"> Cantidad: 1 </br> Tienes 1 producto en tu carro</span>
+							<div class="linea_gruesa"></div>
+							<div class="cuadro_subtotal"><span class="valor_compra">Subtotal: $4.590</span></div>
+							
+							<button type="submit" class="button_compra" value="" name="datos"><span class="texto_boton" >Comprar</span></button>
+						</div>
+					</ul>
+
+
+				</div>
+		</div>
+
+		<nav>
+			<div class="menu_principal">
+
+					<ul class="secciones_menu">
+							<li class="seccion"><a href="home_joyeria.html">INICIO</a></li>
+							<li class="seccion"><a href="seccion_productos.html">PRODUCTOS</a></li>
+							<li class="seccion"><a href="seccion_faqs.html">PREGUNTAS FRECUENTES</a></li>
+							<li class="seccion"><a href="seccion_contacto.html">CONTACTO</a></li>
+					</ul>
+			</div>
+		</nav>
+
+		<div class="menu_lateral">
+
+				<ol class="opciones_menulateral">
+
+						<li class="opciones" id="opcion_joyas"><a href="#">JOYAS</a></li>
+							
+						
+							<ul id="opcion_joyas">
+							    <li class="opciones_anidadas"><a href="#">Oro</a></li>
+							    <li class="opciones_anidadas"><a href="#">Plata</a></li>
+							    <li class="opciones_anidadas"><a href="#">Acero Quirúrgico</a></li>   
+							    <li class="opciones_anidadas"><a href="#">Peltre</a></li>
+							    <li class="opciones_anidadas"><a href="#">Fantasía</a></li>
+							</ul>
+
+						<li class="opciones" id="opcion_vestuario"><a href="#">VESTUARIO</a></li>
+							
+							<ul id="opcion_vestuario">
+							    <li class="opciones_anidadas"><a href="#">Poleras</a></li>
+							    <li class="opciones_anidadas"><a href="#">Jeans</a></li>
+							    <li class="opciones_anidadas"><a href="#">Pantyes</a></li>   
+							</ul>
+
+						<li class="opciones" id="opcion_belleza"><a href="#">BELLEZA</a></li>
+						<ul id="opcion_belleza">
+						    <li class="opciones_anidadas"><a href="#">Alisado keratina</a></li>
+						    <li class="opciones_anidadas"><a href="#">Manicure</a></li>
+						</ul>
+
+						<li class="opciones" id="opcion_accesorios"><a href="#">ACCESORIOS</a></li>
+							<ul id="opcion_accesorios">
+							    <li class="opciones_anidadas"><a href="#">Carteras</a></li>
+							    <li class="opciones_anidadas"><a href="#">Mochilas</a></li>
+							</ul>
+				</ol>	
+		</div>
+
+		<div class="contenido_central">
+
+				<div class="contenido_seleccion">
+						<form method="get" action="ordenar.php">
+						
+							<span class="texto_select"> Ordenar por </span> 
+							<select name="ordenar_precios" placeholder="Precio mayor">
+								  <option value="">Precio mayor</option>
+								  <option value="">Precio menor</option>
+							</select>
+
+
+							<span class="texto_select"> Ver </span>
+							<select name="ver" placeholder="Todos">
+								  <option value="">Todos</option>
+								  <option value="">Collar</option>  
+								  <option value="">Anillo</option>
+								  <option value="">Aros</option>
+							</select>
+
+							<span class="texto_select"> Ver como </span>
+							<a href="seccion_productos.html"><img src="imagenes/boton_cuadricula1-19.png"></img><span class="imagenes_ordenar"></span></a>		
+							<a href="seccion_productos2.html"><img src="imagenes/boton_cuadricula2-20.png"></img><span class="imagenes_ordenar"></span></a>
+
+						</form>
+
+						<div class="navegacion_pags">
+							<span class="paginacion"> Pág </span>
+							<a href="#"><span class="paginacion"> 1</span></a>
+							<a href="#"><span class="paginacion"> 2</span></a>
+							<a href="#"><span class="paginacion"> 3</span></a>
+							<a href="#"><span class="paginacion"> 4</span></a>
+							<a href="#"><span class="paginacion"> <img src="imagenes/flecha_roja-21.png"></img></span></a>
+						</div>
+				</div>
+
+						<div class="cuadricula_productos">
+
+							<div class="productos1">
+
+								<div class="contenedor_imagen">
+									<a href="ver_detalleproducto.html">
+										<div class="imagen1"><img src="imagenes/arospajarito.png"></img></div>
+									</a>
+									<span class="titulo_producto">Aros pájaro y piedra</span>
+									<span class="precio_prod">$4.590</span> 
+									<button type="submit" class="button_agregar" value="" name="producto"><span class="texto_boton_agregar" >Añadir</span></button>
+								</div>
+
+								<div class="contenedor_imagen">
+									<a href="#"><div class="imagen1"><img src="imagenes/arosconjunto1.png"></img></div></a>
+									<span class="titulo_producto">Conjunto aros piedras y mariposas lila</span>
+									<span class="precio_prod">$6.790</span> 
+									<button type="submit" class="button_agregar" value="" name="producto"><span class="texto_boton_agregar" >Añadir</span></button>
+								</div>
+
+								<div class="contenedor_imagen">
+									<a href="#"><div class="imagen1"><img src="imagenes/conjuntoarosflor.png"></img></div></a>
+									<span class="titulo_producto">Conjunto aros flores</span>
+									<span class="precio_prod">$3.800</span> 
+									<button type="submit" class="button_agregar" value="" name="producto"><span class="texto_boton_agregar" >Añadir</span></button>
+								</div>
+
+								<div class="contenedor_imagen">
+									<a href="#"><div class="imagen1"><img src="imagenes/aroscolgantes.png"></img></div></a>
+									<span class="titulo_producto">Aros circulo y hojitas</span>
+									<span class="precio_prod">$2.900</span> 
+									<button type="submit" class="button_agregar" value="" name="producto"><span class="texto_boton_agregar" >Añadir</span></button>
+								</div>
+
+							</div>
+
+							<div class="productos1">
+
+								<div class="contenedor_imagen">
+									<a href="#"><div class="imagen1"><img src="imagenes/aroscorazonceleste.png"></img></div></a>
+									<span class="titulo_producto">Aros circular y corazón</span>
+									<span class="precio_prod">$7.000</span> 
+									<button type="submit" class="button_agregar" value="" name="producto"><span class="texto_boton_agregar" >Añadir</span></button>
+								</div>
+
+								<div class="contenedor_imagen">
+									<a href="#"><div class="imagen1"><img src="imagenes/aroscolganterosa.png"></img></div></a>
+									<span class="titulo_producto">Colgantes con aplicaciones piedra</span>
+									<span class="precio_prod">$12.000</span> 
+									<button type="submit" class="button_agregar" value="" name="producto"><span class="texto_boton_agregar" >Añadir</span></button>
+								</div>
+
+								<div class="contenedor_imagen">
+									<a href="#"><div class="imagen1"><img src="imagenes/aroscristalesfacetado1.png"></img></div></a>
+									<span class="titulo_producto">Aros cristales facetados</span>
+									<span class="precio_prod">$3.900</span> 
+									<button type="submit" class="button_agregar" value="" name="producto"><span class="texto_boton_agregar" >Añadir</span></button>
+								</div>
+
+								<div class="contenedor_imagen">
+									<a href="#"><div class="imagen1"><img src="imagenes/aroscafe.png"></img></div></a>
+									<span class="titulo_producto">Aros piedra gotita</span>
+									<span class="precio_prod">$6.700</span> 
+									<button type="submit" class="button_agregar" value="" name="producto"><span class="texto_boton_agregar" >Añadir</span></button>
+								</div>
+
+							</div>
+
+							<div class="navegacion_pags">
+								<span class="paginacion"> Pág </span>
+								<a href="#"><span class="paginacion"> 1</span></a>
+								<a href="#"><span class="paginacion"> 2</span></a>
+								<a href="#"><span class="paginacion"> 3</span></a>
+								<a href="#"><span class="paginacion"> 4</span></a>
+								<a href="#"><span class="paginacion"> <img src="imagenes/flecha_roja-21.png"></img></span></a>
+							</div>
+						</div>
+		</div>
+
+		<div id="footer">
+
+				<ul id="datos_footer">
+					<li id="links_footer"><img src="imagenes/icono_mariposa_footer-11.png"></img></li>
+					<li id="links_footer"><a href="home_joyeria.html">INICIO</a></li>
+					<li id="links_footer"><a href="seccion_productos.html">PRODUCTOS</a></li>
+					<li id="links_footer"><a href="seccion_faqs.html">PREGUNTAS FRECUENTES</a></li>
+					<li id="links_footer"><a href="seccion_contacto.html">CONTACTO</a></li>
+					<li id="links_footer"><img src="imagenes/icono_mariposa_footer-11.png"></img></li>
+				</ul>
+
+				<ul id="redes_sociales">
+					<li id="iconos_redes"><a href="mailto:admin@javiana.cl"><img src="imagenes/icono_mail-11.png"></img></a></li>
+					<li id="iconos_redes"><a href="www.facebook.com"><img src="imagenes/icono_facebook-11.png"></img></a></li>
+					<li id="iconos_redes"><a href="www.twitter.com"><img src="imagenes/icono_twitter-11.png"></img></a></li>
+				</ul>
+		</div>						
+</div>
+				
+</body>
+
+</html>
